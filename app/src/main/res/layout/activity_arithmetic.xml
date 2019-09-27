@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
     tools:context=".ArithmeticActivity">
 
     <EditText
@@ -21,22 +22,27 @@
         android:layout_margin="20dp"
         android:hint="Enter Second no" />
 
-    <RadioButton
-        android:id="@+id/rdoSum"
+    <RadioGroup
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="SUM"
-        android:textSize="15sp"
-        />
-    <RadioButton
-        android:id="@+id/rdoSubtract"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="Subtract"
-        android:textSize="15sp"
-        />
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rdoSum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="SUM"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/rdoSubtract"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Subtract"
+            android:textSize="15sp" />
+    </RadioGroup>
+
     <Button
         android:id="@+id/btnCalculate"
         android:layout_width="match_parent"
